@@ -1,0 +1,222 @@
+.context-stack {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: 2px solid #555555;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #1a1a1a;
+  overflow: hidden;
+}
+
+.context-stack-size {
+  width: 150px;
+}
+
+.context-stack-mini-size {
+  width: 110px;
+  border-radius: 3px;
+}
+
+.context-stack-total {
+  border-bottom: 1px solid #aaaaaa;
+  text-align: right;
+  color: #1a7f1a;
+}
+
+/* Fixed heights (with their 1px divider) keep the stack's total height
+   computable in contextStackBodyHeightOf. */
+.context-stack-total-size {
+  height: 20px;
+  line-height: 20px;
+  padding: 0 6px;
+  font-size: 13px;
+}
+
+.context-stack-total-mini-size {
+  padding: 1px 5px;
+  font-size: 10px;
+}
+
+.context-stack-item-slot {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.context-stack-item {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #999999;
+  border-radius: 3px;
+  background-color: #ececec;
+}
+
+.context-stack-item-size {
+  height: 20px;
+  margin: 2px 4px;
+  padding: 0 5px;
+  font-size: 14px;
+}
+
+.context-stack-item-mini-size {
+  height: 14px;
+  margin: 1px 3px 2px 3px;
+  padding: 0 4px;
+  font-size: 10px;
+}
+
+.context-stack-item-json {
+  border-color: #2b2b3a;
+  background-color: #2b2b3a;
+  color: #9fe8a8;
+}
+
+.context-stack-item-system {
+  border-color: #4a80b4;
+  background-color: #bcd7f2;
+}
+
+.context-stack-item-token {
+  color: #1a7f1a;
+}
+
+.context-stack-item-token-json {
+  color: #9fe8a8;
+}
+
+.context-stack-title {
+  border-top: 1px solid #aaaaaa;
+  font-weight: 600;
+  text-align: center;
+}
+
+.context-stack-title-size {
+  height: 24px;
+  line-height: 24px;
+  padding: 0 6px;
+  font-size: 15px;
+}
+
+.context-stack-title-mini-size {
+  padding: 1px 5px;
+  font-size: 11px;
+}
+
+.stack-orch {
+  background-color: #fff8e2;
+}
+
+.stack-user {
+  background-color: #ffffff;
+}
+
+.context-stack-detail {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: 2px solid #555555;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #1a1a1a;
+}
+
+.context-stack-detail-viewport {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Bottom-anchored: when items exceed the viewport, older ones move up and
+   get clipped at the top edge. */
+.context-stack-detail-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.context-stack-detail-slot {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.context-stack-detail-item {
+  box-sizing: border-box;
+  margin: 2px 5px;
+  padding: 3px 6px;
+  border: 1px solid #999999;
+  border-radius: 3px;
+  background-color: #ececec;
+}
+
+.context-stack-detail-item-json {
+  border-color: #2b2b3a;
+  background-color: #2b2b3a;
+  color: #9fe8a8;
+}
+
+.context-stack-detail-item-system {
+  border-color: #4a80b4;
+  background-color: #bcd7f2;
+}
+
+.context-stack-detail-item-head {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 600;
+}
+
+.context-stack-detail-item-text {
+  font-size: 12px;
+  line-height: 15px;
+  white-space: pre;
+}
+
+.context-stack-detail-title {
+  height: 24px;
+  line-height: 24px;
+  padding: 0 6px;
+  border-top: 1px solid #aaaaaa;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.magnify-cone-line {
+  stroke: #999999;
+  stroke-width: 1.5;
+}
+
+.stack-tooltip {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: visible;
+}
+
+.stack-tooltip-pointer {
+  position: absolute;
+  bottom: 0;
+  left: -9px;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 13px solid #555555;
+}
+
+.stack-tooltip-body {
+  position: absolute;
+  bottom: 11px;
+  left: 0;
+  transform: translateX(-50%);
+}

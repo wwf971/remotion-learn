@@ -1,0 +1,121 @@
+.msg-balloon {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: visible;
+}
+
+.msg-balloon-string {
+  position: absolute;
+  background-color: #555555;
+}
+
+.msg-balloon-string-up {
+  left: -1px;
+  bottom: 0;
+  width: 2px;
+  height: 30px;
+}
+
+.msg-balloon-string-down {
+  left: -1px;
+  top: 0;
+  width: 2px;
+  height: 30px;
+}
+
+.msg-balloon-string-left {
+  top: -1px;
+  right: 0;
+  height: 2px;
+  width: 30px;
+}
+
+.msg-balloon-string-right {
+  top: -1px;
+  left: 0;
+  height: 2px;
+  width: 30px;
+}
+
+.msg-balloon-body {
+  position: absolute;
+  padding: 4px 8px;
+  border: 2px solid #555555;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 22px;
+  color: #1a1a1a;
+  white-space: nowrap;
+}
+
+.msg-balloon-body-up {
+  left: 0;
+  bottom: 30px;
+  transform: translateX(-50%);
+}
+
+.msg-balloon-body-down {
+  left: 0;
+  top: 30px;
+  transform: translateX(-50%);
+}
+
+.msg-balloon-body-left {
+  right: 30px;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+.msg-balloon-body-right {
+  left: 30px;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+/* Body that only positions its content (a stack or history blocks),
+   which brings its own borders and backgrounds. */
+.msg-balloon-body-bare {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.msg-history {
+  display: flex;
+  gap: 3px;
+}
+
+.msg-history-column {
+  flex-direction: column;
+}
+
+.msg-history-row {
+  flex-direction: row;
+}
+
+.msg-history-block {
+  box-sizing: border-box;
+  padding: 2px 7px;
+  border: 1px solid #555555;
+  border-radius: 4px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  color: #1a1a1a;
+  white-space: nowrap;
+}
+
+.msg-history-block-plain {
+  border-width: 2px;
+  background-color: #ffffff;
+}
+
+.msg-balloon-body-json {
+  background-color: #2b2b3a;
+  border-color: #2b2b3a;
+  color: #9fe8a8;
+  font-size: 19px;
+  white-space: pre;
+  text-align: left;
+}

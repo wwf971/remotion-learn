@@ -1,0 +1,41 @@
+.skill-panel {
+  position: absolute;
+  box-sizing: border-box;
+  border: 2px solid #555555;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #1a1a1a;
+  padding-bottom: 4px;
+}
+
+.skill-panel-title {
+  padding: 4px 8px;
+  border-bottom: 1px solid #aaaaaa;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.skill-file-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 24px;
+  padding-right: 8px;
+}
+
+.skill-file-label {
+  font-size: 15px;
+}
+
+.skill-file-label-dir {
+  font-size: 15px;
+  font-weight: 600;
+  color: #555555;
+}
+
+.skill-file-read-tag {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1a7f1a;
+}

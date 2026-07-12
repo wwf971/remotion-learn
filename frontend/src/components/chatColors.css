@@ -1,0 +1,34 @@
+/* Background colors for abstract chat blocks (history blocks and context
+   stack items). Loaded after the component css so the background wins. */
+
+.chat-block-user1 {
+  background-color: #f2b8b8;
+}
+
+.chat-block-llm1 {
+  background-color: #b8d4f2;
+}
+
+.chat-block-user2 {
+  background-color: #f2d9a6;
+}
+
+.chat-block-llm2 {
+  background-color: #b8e6c8;
+}
+
+.chat-block-user3 {
+  background-color: #e6c0e8;
+}
+
+.chat-block-llm3 {
+  background-color: #b0e0e0;
+}
+
+.chat-block-user4 {
+  background-color: #f0c8a8;
+}
+
+.chat-block-llm4 {
+  background-color: #c8c4ee;
+}

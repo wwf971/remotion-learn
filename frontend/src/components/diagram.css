@@ -1,0 +1,50 @@
+.diagram-canvas {
+  background-color: #ffffff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.diagram-arrow-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.node-box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 2px solid #333333;
+  border-radius: 6px;
+}
+
+.node-box-align-top {
+  align-items: flex-start;
+  padding-top: 6px;
+}
+
+.node-box-label {
+  font-size: 30px;
+  color: #1a1a1a;
+}
+
+.node-container {
+  background-color: #c9dff5;
+}
+
+.node-llm {
+  background-color: #78c679;
+}
+
+.node-orchestrator {
+  background-color: #fdb913;
+}
+
+.node-tool {
+  background-color: #a6a6a6;
+}
+
+.node-user {
+  background-color: #ffffff;
+}

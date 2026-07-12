@@ -1,0 +1,46 @@
+.token-counter {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: visible;
+}
+
+.token-counter-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  white-space: nowrap;
+}
+
+.token-counter-usd {
+  font-size: 22px;
+  font-weight: 600;
+  color: #cc2222;
+}
+
+.token-counter-line {
+  font-size: 19px;
+  color: #1a7f1a;
+}
+
+.token-rise {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: visible;
+}
+
+.token-rise-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-50%);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  color: #1a7f1a;
+  white-space: nowrap;
+}
