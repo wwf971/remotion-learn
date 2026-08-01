@@ -1,4 +1,5 @@
 import "./index.css";
+import { DbMigrationCompositions } from "./db-migration/DbMigrationCompositions";
 import { Composition } from "remotion";
 import { AgentUserOverview } from "./compositions/AgentUserOverview";
 import { AgentToolFlow, agentToolFlowStore } from "./compositions/AgentToolFlow";
@@ -28,6 +29,7 @@ import {
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <DbMigrationCompositions />
       <Composition
         id="AgentUserOverview"
         component={AgentUserOverview}
